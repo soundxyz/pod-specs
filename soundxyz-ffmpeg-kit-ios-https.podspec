@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.summary      = "FFmpeg Kit iOS Https Shared Framework"
   s.description  = "Includes FFmpeg with gmp and gnutls libraries enabled."
   s.homepage     = "https://github.com/soundxyz/pod-specs"
-  s.license      = { :type => "LGPL-3.0", :file => "ffmpegkit.xcframework/ios-arm64/ffmpegkit.framework/LICENSE" }
+  s.license      = { :type => "LGPL-3.0", :file => "Frameworks/ffmpegkit.xcframework/ios-arm64/ffmpegkit.framework/LICENSE" }
   s.authors      = "SoundXYZ"
 
   s.platform          = :ios
@@ -30,13 +30,13 @@ Pod::Spec.new do |s|
     "VideoToolbox"
   ]
   s.vendored_frameworks = [
-    "ffmpegkit.xcframework",
-    "libavcodec.xcframework",
-    "libavdevice.xcframework",
-    "libavfilter.xcframework",
-    "libavformat.xcframework",
-    "libavutil.xcframework",
-    "libswresample.xcframework",
-    "libswscale.xcframework",
+    "Frameworks/ffmpegkit.xcframework",
+    "Frameworks/libavcodec.xcframework",
+    "Frameworks/libavdevice.xcframework",
+    "Frameworks/libavfilter.xcframework",
+    "Frameworks/libavformat.xcframework",
+    "Frameworks/libavutil.xcframework",
+    "Frameworks/libswresample.xcframework",
+    "Frameworks/libswscale.xcframework",
   ]
 end
