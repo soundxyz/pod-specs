@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.summary      = "FFmpeg Kit iOS Https Shared Framework"
   s.description  = "Includes FFmpeg with gmp and gnutls libraries enabled."
   s.homepage     = "https://github.com/soundxyz/pod-specs"
-  s.license      = { :type => "LGPL-3.0", :file => "Frameworks/ffmpegkit.xcframework/ios-arm64/ffmpegkit.framework/LICENSE" }
+  s.license      = { :type => "LGPL-3.0", :file => "ffmpegkit.xcframework/ios-arm64/ffmpegkit.framework/LICENSE" }
   s.authors      = "SoundXYZ"
 
   s.platform          = :ios
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.requires_arc      = true
   s.static_framework  = true
 
-  s.source       = { :http => "https://github.com/soundxyz/pod-specs.git", :tag => s.version.to_s }
+  s.source       = { :http => "https://github.com/my-groove/ffmpeg-kit/releases/download/v6.0.2-mygroove/ffmpeg-kit-https-6.0-ios-xcframework.zip" }
 
 
   s.libraries = [
@@ -31,13 +31,13 @@ Pod::Spec.new do |s|
     "VideoToolbox"
   ]
   s.ios.vendored_frameworks = [
-    "Frameworks/ffmpegkit.xcframework",
-    "Frameworks/libavcodec.xcframework",
-    "Frameworks/libavdevice.xcframework",
-    "Frameworks/libavfilter.xcframework",
-    "Frameworks/libavformat.xcframework",
-    "Frameworks/libavutil.xcframework",
-    "Frameworks/libswresample.xcframework",
-    "Frameworks/libswscale.xcframework",
+    "ffmpegkit.xcframework",
+    "libavcodec.xcframework",
+    "libavdevice.xcframework",
+    "libavfilter.xcframework",
+    "libavformat.xcframework",
+    "libavutil.xcframework",
+    "libswresample.xcframework",
+    "libswscale.xcframework",
   ]
 end
