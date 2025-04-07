@@ -16,6 +16,8 @@ Pod::Spec.new do |s|
 
   s.source       = { :http => "https://github.com/soundxyz/pod-specs.git" }
 
+  s.exclude_files = "*.podspec"
+
   s.libraries = [
     "z",
     "bz2",
@@ -29,7 +31,7 @@ Pod::Spec.new do |s|
     "CoreMedia",
     "VideoToolbox"
   ]
-  s.vendored_frameworks = [
+  s.ios.vendored_frameworks = [
     "Frameworks/ffmpegkit.xcframework",
     "Frameworks/libavcodec.xcframework",
     "Frameworks/libavdevice.xcframework",
