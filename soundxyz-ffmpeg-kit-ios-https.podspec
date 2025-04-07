@@ -2,7 +2,7 @@ require "json"
 
 Pod::Spec.new do |s|
   s.name         = "soundxyz-ffmpeg-kit-ios-https"
-  s.version      = "6.0.2"
+  s.version      = "0.1.0"
   s.summary      = "FFmpeg Kit iOS Https Shared Framework"
   s.description  = "Includes FFmpeg with gmp and gnutls libraries enabled."
   s.homepage     = "https://github.com/soundxyz/pod-specs"
